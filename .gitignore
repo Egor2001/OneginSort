@@ -1,3 +1,15 @@
+#C::B directories
+[Bb]in
+[Oo]bj
+
+#Text files directory
+[Ff]iles
+
+#Logs and others
+*.save
+*.out
+*.xml
+
 # Prerequisites
 *.d
 
