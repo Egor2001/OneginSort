@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>OneginSort build log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<tt>
+Build started on: <u>25-09-2017 at 23:31.46</u><br />
+Build ended on: <u>25-09-2017 at 23:31.48</u><p />
+<b>-------------- Build: Release in OneginSort (compiler: GNU GCC Compiler)---------------</b><br />
+mingw32-g++.exe -fexpensive-optimizations -O3 -Wnon-virtual-dtor -Winit-self -Wall -std=c++0x -fexceptions  -fexpensive-optimizations -O3 -std=c++0x     -c C:\Users\Егор\Desktop\OneginSort\main.cpp -o obj\Release\main.o<br />
+In file included from C:\Users\Егор\Desktop\OneginSort\main.cpp:10:0:<br />
+C:\Users\Егор\Desktop\OneginSort\ONmappedSort.h: In constructor 'onegin_sort::SMappedLine::SMappedLine()':<br />
+<font color="#0000ff">C:\Users\Егор\Desktop\OneginSort\ONmappedSort.h:18:59: warning: narrowing conversion of '-1' from 'int' to 'size_t {aka unsigned int}' inside { } [-Wnarrowing]</font><br />
+     SMappedLine(): index{-1}, start_pos{nullptr}, length{0} {}<br />
+                                                           ^<br />
+C:\Users\Егор\Desktop\OneginSort\ONmappedSort.h: In member function 'void onegin_sort::CSorter::abc_sort(onegin_sort::STokenized*)':<br />
+<font color="#0000ff">C:\Users\Егор\Desktop\OneginSort\ONmappedSort.h:209:16: warning: unused variable 'symb_tracker_' [-Wunused-variable]</font><br />
+         size_t symb_tracker_[ON_MAX_LINE_LEN][buckets_num_];<br />
+                ^<br />
+C:\Users\Егор\Desktop\OneginSort\main.cpp: In function 'int main()':<br />
+<font color="#0000ff">C:\Users\Егор\Desktop\OneginSort\main.cpp:35:102: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Wformat=]</font><br />
+     printf("DIRECT: [simple: %d_ms, mapped: %d_ms]\n", simple_sort_ms_elapsed, mapped_sort_ms_elapsed);<br />
+                                                                                                      ^<br />
+<font color="#0000ff">C:\Users\Егор\Desktop\OneginSort\main.cpp:35:102: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long unsigned int' [-Wformat=]</font><br />
+<font color="#0000ff">C:\Users\Егор\Desktop\OneginSort\main.cpp:45:103: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Wformat=]</font><br />
+     printf("REVERSE: [simple: %d_ms, mapped: %d_ms]\n", simple_sort_ms_elapsed, mapped_sort_ms_elapsed);<br />
+                                                                                                       ^<br />
+<font color="#0000ff">C:\Users\Егор\Desktop\OneginSort\main.cpp:45:103: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long unsigned int' [-Wformat=]</font><br />
+mingw32-g++.exe  -o bin\Release\OneginSort.exe obj\Release\main.o   -s<br />
+Output size is 163,50 KB<br />
+<font color="#0000ff">Process terminated with status 0 (0 minutes, 1 seconds)</font><br />
+<font color="#0000ff">0 errors, 6 warnings (0 minutes, 1 seconds)</font><br />
+</tt>
+</body>
+</html>

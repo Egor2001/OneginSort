@@ -1,0 +1,79 @@
+# depslib dependency file v1.0
+1505771788 source:c:\users\offise\desktop\oneginsort\main.cpp
+	"locale.h"
+	<vector>
+	<algorithm>
+	"ONfile.h"
+	"ONsort.h"
+	"ONmapping.h"
+	"ONmappedSort.h"
+
+1505676341 c:\users\offise\desktop\oneginsort\onsort.h
+	<cstdint>
+	<cstdio>
+	<memory.h>
+	<cstring>
+	<assert.h>
+	"defines.h"
+
+1505679120 c:\users\offise\desktop\oneginsort\defines.h
+
+1505505387 c:\users\offise\desktop\oneginsort\onfile.h
+	<io.h>
+	<stdio.h>
+	<assert.h>
+	<vector>
+	"defines.h"
+	"io.h"
+	"share.h"
+	"fcntl.h"
+
+1505719860 c:\users\offise\desktop\oneginsort\onmapping.h
+	"windows.h"
+	"defines.h"
+
+1505772049 c:\users\offise\desktop\oneginsort\onmappedsort.h
+	"ONmapping.h"
+	<string>
+	<vector>
+
+1506314839 source:c:\users\егор\desktop\oneginsort\main.cpp
+	"locale.h"
+	<vector>
+	<algorithm>
+	"ONfile.h"
+	"ONsort.h"
+	"ONmapping.h"
+	"ONmappedSort.h"
+
+1505516188 c:\users\егор\desktop\oneginsort\onfile.h
+	<io.h>
+	<stdio.h>
+	<assert.h>
+	<vector>
+	"defines.h"
+	"io.h"
+	"share.h"
+	"fcntl.h"
+
+1505689922 c:\users\егор\desktop\oneginsort\defines.h
+
+1506250657 c:\users\егор\desktop\oneginsort\onsort.h
+	<cstdint>
+	<cstdio>
+	<memory.h>
+	<cstring>
+	<assert.h>
+	"defines.h"
+
+1506239548 c:\users\егор\desktop\oneginsort\onmapping.h
+	"windows.h"
+	"defines.h"
+
+1506314883 c:\users\егор\desktop\oneginsort\onmappedsort.h
+	"ONmapping.h"
+	"defines.h"
+	<string>
+	<vector>
+	<memory>
+
