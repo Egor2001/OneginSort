@@ -12,7 +12,7 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
-					<Add option="-std=c++11" />
+					<Add option="-std=c++0x" />
 					<Add option="-pg" />
 					<Add option="-g" />
 				</Compiler>
@@ -44,11 +44,13 @@
 			<Add option="-std=c++0x" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="ONfile.h" />
-		<Unit filename="ONmappedSort.h" />
-		<Unit filename="ONmapping.h" />
-		<Unit filename="ONsort.h" />
-		<Unit filename="defines.h" />
+		<Unit filename="CppStyle/Logging/ONlogging.h" />
+		<Unit filename="CppStyle/ONinputFile.h" />
+		<Unit filename="CppStyle/ONmapping.h" />
+		<Unit filename="CppStyle/ONoutputFile.h" />
+		<Unit filename="CppStyle/ONsort.h" />
+		<Unit filename="CppStyle/ONtextBuffer.h" />
+		<Unit filename="ONdefines.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

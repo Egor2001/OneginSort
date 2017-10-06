@@ -77,3 +77,105 @@
 	<vector>
 	<memory>
 
+1507329583 source:c:\users\егор\desktop\#school\#прога\oneginsort\main.cpp
+	"locale.h"
+	<vector>
+	<algorithm>
+	"CppStyle/ONinputFile.h"
+	"CppStyle/ONoutputFile.h"
+	"CppStyle/ONmappedSort.h"
+	"CppStyle/ONmapping.h"
+	"CppStyle/ONsort.h"
+
+1506402300 c:\users\егор\desktop\#school\#прога\oneginsort\onfile.h
+	<io.h>
+	<stdio.h>
+	<assert.h>
+	<vector>
+	"defines.h"
+	"io.h"
+	"share.h"
+	"fcntl.h"
+
+1506380180 c:\users\егор\desktop\#school\#прога\oneginsort\defines.h
+
+1506402688 c:\users\егор\desktop\#school\#прога\oneginsort\onsort.h
+	<cstdint>
+	<cstdio>
+	<memory.h>
+	<cstring>
+	<assert.h>
+	"defines.h"
+
+1506400995 c:\users\егор\desktop\#school\#прога\oneginsort\onmapping.h
+	"windows.h"
+	"defines.h"
+
+1506378868 c:\users\егор\desktop\#school\#прога\oneginsort\onmappedsort.h
+	"ONmapping.h"
+	"defines.h"
+	<string>
+	<vector>
+	<memory>
+
+1507201622 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\onfile.h
+	<stdio.h>
+	<assert.h>
+	<vector>
+	<cstring>
+	<locale>
+	"io.h"
+	"share.h"
+	"fcntl.h"
+	"sys/stat.h"
+	"Logging/ONlogging.h"
+	"../ONdefines.h"
+
+1507207394 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\logging\onlogging.h
+	<cstdio>
+	<typeinfo>
+	<assert.h>
+
+1507204081 c:\users\егор\desktop\#school\#прога\oneginsort\ondefines.h
+
+1507320788 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\onmappedsort.h
+
+1506479066 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\onmapping.h
+	"windows.h"
+	"../ONdefines.h"
+
+1507331561 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\onsort.h
+	<cstdlib>
+	<cstdint>
+	<cstdio>
+	<memory.h>
+	<cstring>
+	<assert.h>
+	"../ONdefines.h"
+	"ONtextBuffer.h"
+
+1507328378 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\oninputfile.h
+	<stdio.h>
+	<cstring>
+	"io.h"
+	"share.h"
+	"fcntl.h"
+	"sys/stat.h"
+	"Logging/ONlogging.h"
+	"../ONdefines.h"
+
+1507329345 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\onoutputfile.h
+	<stdio.h>
+	<cstring>
+	"io.h"
+	"share.h"
+	"fcntl.h"
+	"sys/stat.h"
+	"Logging/ONlogging.h"
+	"../ONdefines.h"
+	"ONtextBuffer.h"
+
+1507330069 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\ontextbuffer.h
+	"ONinputFile.h"
+	"ONmapping.h"
+

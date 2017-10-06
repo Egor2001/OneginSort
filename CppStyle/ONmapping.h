@@ -1,9 +1,9 @@
-#ifndef MAPPING_H_INCLUDED
-#define MAPPING_H_INCLUDED
+#ifndef ON_MAPPING_H_INCLUDED
+#define ON_MAPPING_H_INCLUDED
 
 #include "windows.h"
 
-#include "defines.h"
+#include "../ONdefines.h"
 
 namespace onegin_sort {
 
@@ -17,7 +17,7 @@ class CMapping
 public:
     CMapping() = default;
     CMapping(ECMapMode map_mode_set, const char* file_path, DWORD file_length_set = 0):
-        map_mode_(map_mode_set), map_handle_(NULL), file_handle_(NULL), file_length_{file_length_set}
+        map_mode_(map_mode_set), map_handle_{NULL}, file_handle_{NULL}, file_length_(file_length_set)
     {
         switch (map_mode_)
         {
@@ -145,6 +145,7 @@ public:
         length_ = offset_ = 0;
     }
 
+    DWORD       get_offset() const { return offset_; }
     DWORD       get_length() const { return length_; }
     const char* get_view  () const { return view_ptr_; }
           char* get_view  ()       { return view_ptr_; }
@@ -157,4 +158,4 @@ private:
 
 }//namespace onegin_sort
 
-#endif //MAPPING_H_INCLUDED
+#endif //ON_MAPPING_H_INCLUDED
