@@ -77,13 +77,12 @@
 	<vector>
 	<memory>
 
-1507329583 source:c:\users\егор\desktop\#school\#прога\oneginsort\main.cpp
+1507611060 source:c:\users\егор\desktop\#school\#прога\oneginsort\main.cpp
 	"locale.h"
 	<vector>
 	<algorithm>
 	"CppStyle/ONinputFile.h"
 	"CppStyle/ONoutputFile.h"
-	"CppStyle/ONmappedSort.h"
 	"CppStyle/ONmapping.h"
 	"CppStyle/ONsort.h"
 
@@ -131,7 +130,7 @@
 	"Logging/ONlogging.h"
 	"../ONdefines.h"
 
-1507207394 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\logging\onlogging.h
+1507366093 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\logging\onlogging.h
 	<cstdio>
 	<typeinfo>
 	<assert.h>
@@ -140,11 +139,11 @@
 
 1507320788 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\onmappedsort.h
 
-1506479066 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\onmapping.h
+1507367667 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\onmapping.h
 	"windows.h"
 	"../ONdefines.h"
 
-1507331561 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\onsort.h
+1507611025 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\onsort.h
 	<cstdlib>
 	<cstdint>
 	<cstdio>
@@ -152,6 +151,7 @@
 	<cstring>
 	<assert.h>
 	"../ONdefines.h"
+	"Logging/ONlogging.h"
 	"ONtextBuffer.h"
 
 1507328378 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\oninputfile.h
@@ -164,7 +164,7 @@
 	"Logging/ONlogging.h"
 	"../ONdefines.h"
 
-1507329345 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\onoutputfile.h
+1507374010 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\onoutputfile.h
 	<stdio.h>
 	<cstring>
 	"io.h"
@@ -175,7 +175,7 @@
 	"../ONdefines.h"
 	"ONtextBuffer.h"
 
-1507330069 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\ontextbuffer.h
+1507373485 c:\users\егор\desktop\#school\#прога\oneginsort\cppstyle\ontextbuffer.h
 	"ONinputFile.h"
 	"ONmapping.h"
 

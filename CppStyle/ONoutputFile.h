@@ -45,7 +45,7 @@ public:
         ON_CHECK_OK(this);
     }
 
-    virtual ~CFileOutput()
+    virtual ~CFileOutput() override
     {
         ON_CHECK_OK(this);
 
@@ -92,9 +92,19 @@ public:
         file_view_     ((char*)MapViewOfFile(mapping_class.get_map_handle(),
                                              FILE_MAP_WRITE, 0, 0, file_view_size_))
     {
+        ON_CHECK_NOT_EQ(mapping_class.get_map_mode(), ECMapMode::MAP_READONLY_FILE);
         ON_CHECK_NOT_EQ(file_view_, nullptr);
 
         ON_CHECK_OK(this);
+    }
+
+    virtual ~CMappedOutput() override
+    {
+        if (file_view_)
+            UnmapViewOfFile(file_view_);
+
+        file_view_ = nullptr;
+        ON_POISON(file_view_size_);
     }
 
     virtual void write_text_buffer(const CAbstractTextBuffer* text_buffer_ptr) override
@@ -125,7 +135,7 @@ public:
 
     virtual bool ok() const override
     {
-        return file_view_ && file_view_size_;
+        return file_view_ && !ON_IS_POISON(file_view_size_);
     }
 
     virtual void dump() const override

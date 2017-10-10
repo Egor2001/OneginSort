@@ -20,7 +20,7 @@
 
 #define ON_CHECK_SYSCALL(result) (result)
 
-#define ON_CHECK_OK(obj_ptr) \
+#define ON_CHECK_OK(obj_ptr)// \
     if (!obj_ptr->ok()) { obj_ptr->dump(); assert(!typeid(*obj_ptr).name()); }
 
 namespace onegin_sort {

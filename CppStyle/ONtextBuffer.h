@@ -215,7 +215,7 @@ public:
     CFileTextBuffer             (const CFileTextBuffer&) = delete;
     CFileTextBuffer& operator = (const CFileTextBuffer&) = delete;
 
-    ~CFileTextBuffer()
+    virtual ~CFileTextBuffer() override
     {
         ON_CHECK_OK(this);
 
@@ -255,17 +255,21 @@ private:
         ON_CHECK_OK(this);
     }
 
-
 public:
     CMappedTextBuffer(const CMapping& mapping_class):
         CMappedTextBuffer(mapping_class.get_file_length(),
                           (const char*)MapViewOfFile(mapping_class.get_map_handle(),
-                                                     FILE_MAP_READ, 0, 0, mapping_class.get_file_length())) {}
+                                                     FILE_MAP_READ, 0, 0, mapping_class.get_file_length()))
+    {
+        ON_CHECK_NOT_EQ(mapping_class.get_map_mode(), ECMapMode::MAP_WRITEONLY_FILE);
+
+        ON_CHECK_OK(this);
+    }
 
     CMappedTextBuffer             (const CFileTextBuffer&) = delete;
     CMappedTextBuffer& operator = (const CFileTextBuffer&) = delete;
 
-    ~CMappedTextBuffer()
+    virtual ~CMappedTextBuffer() override
     {
         ON_CHECK_OK(this);
 

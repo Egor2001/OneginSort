@@ -1,42 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <BrowseTracker_layout_file>
-	<ActiveTarget name="Release" />
+	<ActiveTarget name="Debug" />
+	<File name="CppStyle\ONmapping.h" open="0" top="0" tabpos="6">
+		<Cursor position="2035" topLine="73" />
+		<BrowseMarks positions="886" />
+	</File>
 	<File name="ONdefines.h" open="0" top="0" tabpos="7">
 		<Cursor position="239" topLine="0" />
 	</File>
-	<File name="CppStyle\Logging\ONlogging.h" open="1" top="0" tabpos="4">
-		<Cursor position="123" topLine="0" />
+	<File name="main.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="266" topLine="9" />
+		<BrowseMarks positions="718" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="CppStyle\ONtextBuffer.h" open="0" top="0" tabpos="3">
+		<Cursor position="70" topLine="0" />
+		<BrowseMarks positions="5379" />
+	</File>
+	<File name="CppStyle\ONoutputFile.h" open="0" top="0" tabpos="5">
+		<Cursor position="2727" topLine="54" />
+	</File>
+	<File name="CppStyle\ONsort.h" open="1" top="0" tabpos="1">
+		<Cursor position="9742" topLine="156" />
 		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="CppStyle\ONinputFile.h" open="0" top="0" tabpos="4">
+		<Cursor position="1436" topLine="39" />
+	</File>
+	<File name="CppStyle\Logging\ONlogging.h" open="0" top="0" tabpos="7">
+		<Cursor position="770" topLine="6" />
 		<Book_Marks positions="426" />
-	</File>
-	<File name="CppStyle\ONsort.h" open="1" top="1" tabpos="2">
-		<Cursor position="2302" topLine="19" />
-		<BrowseMarks positions="" />
-		<Book_Marks positions="" />
-	</File>
-	<File name="CppStyle\ONoutputFile.h" open="1" top="0" tabpos="5">
-		<Cursor position="2017" topLine="67" />
-		<BrowseMarks positions="" />
-		<Book_Marks positions="" />
-	</File>
-	<File name="CppStyle\ONinputFile.h" open="1" top="0" tabpos="4">
-		<Cursor position="719" topLine="22" />
-		<BrowseMarks positions="" />
-		<Book_Marks positions="" />
-	</File>
-	<File name="CppStyle\ONtextBuffer.h" open="1" top="0" tabpos="3">
-		<Cursor position="7317" topLine="83" />
-		<BrowseMarks positions="5381" />
-		<Book_Marks positions="" />
-	</File>
-	<File name="CppStyle\ONmapping.h" open="1" top="0" tabpos="7">
-		<Cursor position="3172" topLine="48" />
-		<BrowseMarks positions="" />
-		<Book_Marks positions="" />
-	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="2705" topLine="0" />
-		<BrowseMarks positions="731" />
-		<Book_Marks positions="" />
 	</File>
 </BrowseTracker_layout_file>

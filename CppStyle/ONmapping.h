@@ -7,9 +7,9 @@
 
 namespace onegin_sort {
 
-enum ECMapMode
+enum class ECMapMode
 {
-    MAP_INITIAL_FILE, MAP_RESULTING_FILE
+    MAP_READONLY_FILE, MAP_WRITEONLY_FILE, MAP_READWRITE_FILE
 };
 
 class CMapping
@@ -21,13 +21,14 @@ public:
     {
         switch (map_mode_)
         {
-        case MAP_INITIAL_FILE:
+        case ECMapMode::MAP_READONLY_FILE:
             file_handle_ = CreateFile(file_path, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING,
                                       FILE_ATTRIBUTE_NORMAL | FILE_FLAG_RANDOM_ACCESS, NULL);
 
             break;
 
-        case MAP_RESULTING_FILE:
+        case ECMapMode::MAP_WRITEONLY_FILE:
+        case ECMapMode::MAP_READWRITE_FILE:
             file_handle_ = CreateFile(file_path, GENERIC_READ | GENERIC_WRITE, 0, NULL, OPEN_EXISTING,
                                       FILE_ATTRIBUTE_NORMAL | FILE_FLAG_SEQUENTIAL_SCAN, NULL);
 
@@ -46,12 +47,13 @@ public:
 
         switch (map_mode_)
         {
-        case MAP_INITIAL_FILE:
+        case ECMapMode::MAP_READONLY_FILE:
             map_handle_ = CreateFileMapping(file_handle_, NULL, PAGE_READONLY, 0, file_length_, ON_INITIAL_MAPPING_NAME);
 
             break;
 
-        case MAP_RESULTING_FILE:
+        case ECMapMode::MAP_WRITEONLY_FILE:
+        case ECMapMode::MAP_READWRITE_FILE:
             map_handle_ = CreateFileMapping(file_handle_, NULL, PAGE_READWRITE, 0, file_length_, ON_RESULT_MAPPING_NAME);
 
             break;
@@ -104,57 +106,6 @@ public:
 };
 
 DWORD CMapping::granularity = CMapping::get_granularity_();
-
-class CFileView
-{
-public:
-    CFileView() = default;
-    CFileView(const CMapping& mapping_class, DWORD absolute_offset, DWORD length):
-        offset_(absolute_offset%CMapping::granularity),
-        length_(length+offset_), view_ptr_{NULL}
-    {
-        DWORD view_start = absolute_offset - offset_;
-
-        switch (mapping_class.get_map_mode())
-        {
-        case MAP_INITIAL_FILE:
-            view_ptr_ = (char*)MapViewOfFile(mapping_class.get_map_handle(), FILE_MAP_READ, 0, view_start, length_);
-
-            break;
-
-        case MAP_RESULTING_FILE:
-            view_ptr_ = (char*)MapViewOfFile(mapping_class.get_map_handle(), FILE_MAP_WRITE, 0, view_start, length_);
-
-            break;
-
-        default: assert(0);
-        }
-
-        if (!length_)
-            length_ = mapping_class.get_file_length();
-
-        assert(view_ptr_);
-    }
-
-    ~CFileView()
-    {
-        if (view_ptr_)
-            UnmapViewOfFile(view_ptr_);
-
-        view_ptr_ = NULL;
-        length_ = offset_ = 0;
-    }
-
-    DWORD       get_offset() const { return offset_; }
-    DWORD       get_length() const { return length_; }
-    const char* get_view  () const { return view_ptr_; }
-          char* get_view  ()       { return view_ptr_; }
-
-private:
-    DWORD offset_;
-    DWORD length_;
-    char* view_ptr_;
-};
 
 }//namespace onegin_sort
 
